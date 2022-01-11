@@ -1,14 +1,14 @@
-# OCTM CHALLENGE
+# OTCM CHALLENGE
 Test Assignment for OTCM
 
 ## Prerequisites
 
-- Install node.js 13.x or higher (NVM usage recommended for Linux)
+- Install node.js 12.x or higher (NVM usage recommended for Linux)
 
     https://nodejs.org/en/download/
     https://github.com/creationix/nvm#installation
 
-- Install grunt-cli and grunt 1.0.0
+- Install grunt-cli and grunt 1.4.x
 
     [http://gruntjs.com/getting-started](http://gruntjs.com/getting-started)
 
@@ -19,7 +19,6 @@ Test Assignment for OTCM
 ## Running FrontEnd Tests
 
     grunt test
-    grunt test --headless
     
 ## Report Location
  
