@@ -1,4 +1,4 @@
-# OCTM CHALLENGE
+# OTCM CHALLENGE
 Test Assignment for OTCM
 
 ## Prerequisites
