@@ -16,6 +16,11 @@ var QuotePage = function() {
         await this.NavigationHelper.waitForElement(marketCap);
         return marketCap.getText();
     } 
+
+    this.isMarketCapPresent = async function(){
+        return marketCap.isPresent();
+    }
+
   
   }
 

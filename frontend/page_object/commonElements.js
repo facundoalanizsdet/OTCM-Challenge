@@ -3,8 +3,8 @@ const  navigationHelper = require('../helpers/navigationHelper');
 
 var CommonElements = function() {
 
-    var companyName = element(by.xpath("//h1[@class='_1rzoYNl62n']"))//$("._1rzoYNl62n");
-    var companySymbol = element(by.xpath("//h1[@class='_2D4XgQ0gJK']"))//$("._2D4XgQ0gJK");
+    var companyName = element(by.xpath("//h1[@class='_1rzoYNl62n']"))
+    var companySymbol = element(by.xpath("//h1[@class='_2D4XgQ0gJK']"))
     var quoteTab = element(by.xpath("//a[normalize-space()='Quote']"))
     var securityDetailsTab = element(by.xpath("//a[normalize-space()='Security Details']"))
 

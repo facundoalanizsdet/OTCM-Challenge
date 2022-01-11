@@ -56,12 +56,18 @@ describe("Feature: As a User, I want to search for specific quote for a company"
             });
         
             it("When I compare Market Cap and Open values from Quote tab with the ones in Security Details tab", async function () {
-                var openValueInQuoteTab = await this.QuotePage.getInfofromOpenValue();
+                skipTestIfNoMarketCap = !await this.QuotePage.isMarketCapPresent()
+                if (skipTestIfNoMarketCap) {
+                    pending(" ===> DOESN'T WORK. NO MARKET CAP FOR THIS COMPANY: " + data.symbol);
+                }
                 marketCapInQuoteTab = await this.QuotePage.getInfoFromMarketCap(); 
                 this.CommonElements.clickSecurityDetailsTab();
             });
 
             it("Then the values should match", async function () {
+                if (skipTestIfNoMarketCap) {
+                    pending(" ===> DOESN'T WORK. NO MARKET CAP FOR THIS COMPANY: " + data.symbol);
+                }
                 expect(marketCapInQuoteTab).toBe(await this.SecurityDetailsPage.getInfoFromMarketCap());
                 console.log("Market Cap " + await this.SecurityDetailsPage.getInfoFromMarketCap() + " on " + await this.SecurityDetailsPage.getInfoFromDate());
             });
