@@ -1,0 +1,15 @@
+browser:
+  directConnect: true
+  seleniumAddress: false
+  seleniumServerJarPath: '../../../node_modules/webdriver-manager/selenium/selenium-server-standalone-3.*.jar'
+  chromeDriverPath: "../../../node_modules/webdriver-manager/selenium/chromedriver_2.*"
+  firefoxPath:
+  width: 1440
+  height: 1000
+
+timeouts:
+  allScriptsTimeout: 30000
+  getPageTimeout: 30000
+  defaultTimeoutInterval: 30000
+
+framework: 'jasmine'

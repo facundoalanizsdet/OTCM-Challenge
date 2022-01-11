@@ -1,0 +1,5 @@
+/reports/
+.protractor-failed
+node_modules
+.jshintrc
+/~/
